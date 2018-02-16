@@ -1,0 +1,74 @@
+.notificationBox {
+  background-color: white;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  margin-right: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+}
+
+.notificationMessage:hover, .closeButton:hover {
+  background-color: #f1f1f1;
+}
+.notificationMessage:active, .closeButton:active {
+  background-color: #dcdcdc;
+}
+
+.notificationMessage {
+  padding: 15px 0;
+  padding-right: 0px;
+  display: flex;
+  flex: 5
+}
+
+.notificationIcon {
+  padding: 0 5px;
+}
+
+.closeButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.showNotification {
+  position: relative;
+  -moz-animation: showNotification 0.7s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation: showNotification 0.7s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation: showNotification 0.7s;
+  -o-animation-fill-mode: forwards;
+  -ms-animation: showNotification 0.7s;
+  -ms-animation-fill-mode: forwards;
+  animation: showNotification 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.dismissNotification {
+  position: relative;
+  -moz-animation: dismissNotification 0.7s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation: dismissNotification 0.7s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation: dismissNotification 0.7s;
+  -o-animation-fill-mode: forwards;
+  -ms-animation: dismissNotification 0.7s;
+  -ms-animation-fill-mode: forwards;
+  animation: dismissNotification 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showNotification {
+  0% {right: -300px; opacity: 0}
+  100% {right: 0; opacity: 1}
+}
+
+@keyframes dismissNotification {
+  0% {right: 0; opacity: 1}
+  100% {right: -300px; opacity: 0}
+}

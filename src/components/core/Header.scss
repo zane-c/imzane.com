@@ -1,0 +1,25 @@
+.container {
+  background: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  font-size: 26px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 35px;
+  }
+}
+
+.title {
+  flex: 1;
+  cursor: pointer;
+}

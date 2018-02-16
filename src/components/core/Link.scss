@@ -1,0 +1,11 @@
+.text {
+  text-decoration: underline;
+  color: lighten(#007AB5, 5);
+  cursor: pointer;
+  &:hover {
+    color: #007AB5;
+  }
+  &:active {
+    color: darken(#007AB5, 10);
+  }
+}
