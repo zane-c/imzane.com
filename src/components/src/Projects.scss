@@ -1,11 +1,26 @@
 .container {
-  flex: 1;
-  max-width: 400px;
   height: 100%;
-  background: rgba(57, 65, 79, 0.7); // #39414F
-  color: white;
   display: flex;
-  flex-direction: column;
-  padding: 30px;
-  // box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.68), -2px 0 14px rgba(0, 0, 0, 0.68);
+  flex-direction: row;
+  flex: 2;
+  animation: fade 0.5s forwards;
+  overflow-y: auto;
+}
+
+.dark {
+  background: rgba(57, 65, 79, 0.88);
+}
+
+.light {
+  background: rgba(224, 224, 224, 0.89);
+}
+
+@keyframes fade {
+    from { opacity: 0;}
+    to { opacity: 1; }
+}
+
+.content {
+  margin: 50px;
+  width: 600px;
 }

@@ -1,0 +1,10 @@
+/node_modules
+/dist
+/.idea
+/exclude
+package-lock.json
+npm-debug.log
+.DS_Store
+
+todo.txt
+$PWD/chrome

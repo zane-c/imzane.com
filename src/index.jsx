@@ -13,6 +13,7 @@ import P403 from './components/core/P403.jsx';
 
 import colorsMiddleware from './middleware/colors.js';
 import colorsReducer from './reducers/colors.js';
+import appReducer from './reducers/app.js';
 import notificationsMiddleware from './middleware/notifications.js';
 import notificationsReducer from './reducers/notifications.js';
 import userReducer from './reducers/user.js';
@@ -23,6 +24,7 @@ const rootMiddleware = [
 ];
 
 const rootReducer = combineReducers({
+  app: appReducer,
   colors: colorsReducer,
   notifications: notificationsReducer,
   routing: routerReducer,

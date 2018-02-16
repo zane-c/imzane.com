@@ -18,7 +18,15 @@ function init() {
     scene.fog = new THREE.Fog(new THREE.Color(0xdddddd), 45, 50);
 
     geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
-    material = new THREE.MeshBasicMaterial({ wireframe: true, transparent: true, opacity: 0.55, color: 0x79bcde, fog: true });
+    material = new THREE.MeshBasicMaterial({
+      wireframe: true,
+      morphTargets: true,
+      combine: THREE.AddOperation,
+      transparent: true,
+      opacity: 0.55,
+      color: 0x79bcde,
+      fog: true,
+    });
 
     mesh = new THREE.Mesh( geometry, material );
     scene.add( mesh );
