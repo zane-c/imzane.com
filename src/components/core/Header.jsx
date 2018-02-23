@@ -1,22 +1,41 @@
 import React from 'react';
-import { hashHistory } from 'react-router';
-import MainMenu from './MainMenu.jsx';
-import Logo from '../../assets/logo.png';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
+import { goto as gotopage } from 'src/actions/app.js';
+import Logo from 'res/zlogo.png';
+import TabViewer from './TabViewer.jsx';
 import styles from './Header.scss';
 
-const Header = () => (
-  <div className={styles.container}>
+const Header = ({ url, goto }) => (
+  <div className={styles.header}>
     <div className={styles.logo}>
       <img src={Logo} alt="" />
     </div>
-    <div
-      className={styles.title}
-      onClick={() => hashHistory.push('/')}
-    >
-      Title here
+    <div className={styles.title} onClick={() => browserHistory.push('/')}>
+      ImZANE.com
     </div>
-    <MainMenu />
+    <div className={styles.menuTabs}>
+      <TabViewer
+        options={['projects', 'resume', 'contact']}
+        selected={url.slice(1)}
+        onSelect={s => goto(`/${s}`)}
+      />
+    </div>
   </div>
 );
 
-export default Header;
+Header.propTypes = {
+  url: PropTypes.string.isRequired,
+  goto: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => ({
+  url: state.app.url,
+});
+
+const mapDispatchToProps = dispatch => ({
+  goto: url => dispatch(gotopage(url)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

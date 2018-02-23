@@ -18,7 +18,9 @@ const TabViewer = ({ options, selected, onSelect }) => {
           </div>
         ))}
       </div>
-      <div className={styles.slider} style={{ marginLeft, width }} />
+      {options.includes(selected) &&
+        <div className={styles.slider} style={{ marginLeft, width }} />
+      }
     </div>
   );
 };

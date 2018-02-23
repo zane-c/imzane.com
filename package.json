@@ -9,8 +9,8 @@
     "url": ""
   },
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 3000",
-    "public": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --port 3000",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 3000 --history-api-fallback",
+    "public": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --port 3000 --history-api-fallback",
     "release": "webpack -p",
     "test": "echo \"Write tests\" && exit 0",
     "uglify": "uglifyjs --compress --mangle -- dist/bundle.js",

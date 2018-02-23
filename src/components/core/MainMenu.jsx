@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import styles from './MainMenu.scss';
 
 const MainMenu = () => (
   <div className={styles.menuBar}>
     <div
       className={styles.menuItem}
-      onClick={() => hashHistory.push(`/`)}
+      onClick={() => browserHistory.push(`/`)}
     >Home</div>
     <div
       className={styles.menuItem}
-      onClick={() => hashHistory.push('/contact')}
+      onClick={() => browserHistory.push('/contact')}
     >Contact</div>
     <div
       className={styles.menuItem}
-      onClick={() => hashHistory.push('/settings')}
+      onClick={() => browserHistory.push('/settings')}
     >Account</div>
     <div
       className={styles.menuItem}

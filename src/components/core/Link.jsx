@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import styles from './Link.scss';
 
 const Link = ({ children, href, onClick }) => (
@@ -8,7 +8,7 @@ const Link = ({ children, href, onClick }) => (
     onClick={() => {
       onClick();
       if (href) {
-        hashHistory.push(href);
+        browserHistory.push(href);
       }
     }}
     className={styles.text}

@@ -1,12 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 .app {
   position: absolute; top: 0; left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: Verdana, sans-serif;
+  font-family: 'Comfortaa', monospace, Verdana, sans-serif;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  background: #1e2225;
+  // color: #a3a7aa;
+  color: #e0e0e0;
+}
+
+.body {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 800px;
+  background: #212528;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.13);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
 }
 
 :global {
@@ -18,18 +40,6 @@
     background:transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: #000 !important;
+    background: #1caacb !important;
   }
-}
-
-.body {
-  z-index: 1;
-}
-
-.light {
-  color: #111;
-}
-
-.dark {
-  color: #eee;
 }

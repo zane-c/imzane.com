@@ -4,3 +4,9 @@ export const setState = (key, value) => ({
   key,
   value,
 });
+
+export const GOTO = 'GOTO';
+export const goto = url => ({
+  type: GOTO,
+  url,
+});

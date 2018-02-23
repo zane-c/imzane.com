@@ -1,25 +1,28 @@
-.container {
-  background: white;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  z-index: 1;
-  font-size: 26px;
-  height: 64px;
+.header {
+  padding: 20px 10px;
+  background: #2e343a;
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .logo {
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-
+  padding: 0 10px;
   img {
-    width: 35px;
+    width: 30px;
+    height: 30px;
   }
 }
 
 .title {
-  flex: 1;
+  color: white;
   cursor: pointer;
+  flex: 1;
+  font-size: 18px;
+}
+
+.menuTabs {
+  width: 250px;
+  font-size: 12px;
 }
