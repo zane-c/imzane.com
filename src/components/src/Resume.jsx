@@ -127,6 +127,11 @@ const Resume = ({ goto }) => (
             Click here to view recent projects.
           </div>
         </div>
+        <div className={styles.t2}>
+          <a href="http://bitbyte.site" target="_blank" rel="noopener noreferrer">
+            or check out my old website here.
+          </a>
+        </div>
       </div>
     </div>
   </div>

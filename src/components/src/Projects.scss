@@ -1,26 +1,12 @@
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex: 2;
+  padding: 30px 60px;
+  line-height: 24px;
+  font-size: 12px;
+  padding-bottom: 60px;
   animation: fade 0.5s forwards;
-  overflow-y: auto;
-}
-
-.dark {
-  background: rgba(57, 65, 79, 0.88);
-}
-
-.light {
-  background: rgba(224, 224, 224, 0.89);
 }
 
 @keyframes fade {
     from { opacity: 0;}
     to { opacity: 1; }
-}
-
-.content {
-  margin: 50px;
-  width: 600px;
 }
