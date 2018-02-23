@@ -1,5 +1,6 @@
 .header {
-  padding: 20px 10px;
+  padding-left: 20px;
+  height: 60px;
   background: #2e343a;
   display: flex;
   flex-direction: row;
@@ -18,11 +19,17 @@
 .title {
   color: white;
   cursor: pointer;
-  flex: 1;
+  flex: 4;
   font-size: 18px;
 }
 
 .menuTabs {
   width: 250px;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 470px) {
+  .title {
+    display: none;
+  }
 }

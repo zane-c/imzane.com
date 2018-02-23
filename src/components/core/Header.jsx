@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
 import { goto as gotopage } from 'src/actions/app.js';
 import Logo from 'res/zlogo.png';
-import TabViewer from './TabViewer.jsx';
+import Menu from '../src/MenuWeb.jsx';
 import styles from './Header.scss';
 
 const Header = ({ url, goto }) => (
@@ -15,13 +15,7 @@ const Header = ({ url, goto }) => (
     <div className={styles.title} onClick={() => browserHistory.push('/')}>
       ImZANE.com
     </div>
-    <div className={styles.menuTabs}>
-      <TabViewer
-        options={['projects', 'resume', 'contact']}
-        selected={url.slice(1)}
-        onSelect={s => goto(`/${s}`)}
-      />
-    </div>
+    <Menu />
   </div>
 );
 

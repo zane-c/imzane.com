@@ -6,9 +6,12 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 
 import App from './components/app.jsx';
-import EmptySpace from './components/src/EmptySpace.jsx';
 import Projects from './components/src/Projects.jsx';
 import Resume from './components/src/Resume.jsx';
+import Welcome from './components/src/Welcome.jsx';
+import AuthServ from './components/src/AuthServ.jsx';
+import Flow from './components/src/Flow.jsx';
+import DashClass from './components/src/DashClass.jsx';
 import P404 from './components/core/P404.jsx';
 import P403 from './components/core/P403.jsx';
 
@@ -47,8 +50,12 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
-        <IndexRoute component={EmptySpace} />
+        <IndexRoute component={Welcome} />
         <Route path="/projects" component={Projects} />
+        <Route path="/projects/authenticated-services" component={AuthServ} />
+        <Route path="/projects/dashclass" component={DashClass} />
+        <Route path="/projects/flow" component={Flow} />
+        <Route path="/projects/steganography" component={Welcome} />
         <Route path="/resume" component={Resume} />
         <Route path="*" exact component={P404} />
         <Route path="/403" exact component={P403} />

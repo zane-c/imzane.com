@@ -38,3 +38,9 @@
     background: #1caacb !important;
   }
 }
+
+@media only screen and (max-width: 790px) {
+    .body {
+      width: auto;
+    }
+}
