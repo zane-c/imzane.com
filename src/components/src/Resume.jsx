@@ -65,9 +65,9 @@ class Resume extends React.Component {
               <li>Developed an enterprise toolbox system that interfaced
               with the Model 3, Model X, and Model S vehicles. System was used
               for diagnostics, manufacturing, and capturing live data feeds from
-              vechicles.</li>
+              vehicles.</li>
               <li>Contributed to the project in a fullstack role, designing and
-              devloping user interfaces and also maintaining backend APIs.</li>
+              developing user interfaces and also maintaining backend APIs.</li>
               <li>The system was used to manufacture the very first Model 3s and
               is still in use today.</li>
             </ul>

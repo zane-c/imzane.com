@@ -4,8 +4,8 @@ import ASThumb from 'res/as-thumb.png';
 import DCThumb from 'res/dashclass-thumb.png';
 import CRYPTOThumb from 'res/crypto-thumb.png';
 import FLOWThumb from 'res/flow-thumb.png';
+import BBThumb from 'res/bb.png';
 import gh from 'res/gh.png';
-// import bitbyte from 'res/flow-thumb.png';
 import styles from './Projects.scss';
 
 class Projects extends React.Component {
@@ -104,7 +104,7 @@ class Projects extends React.Component {
           rel="noopner noreferrer"
           className={styles.section}
         >
-          <img src={''} alt="" />
+          <img src={BBThumb} alt="" />
           <div className={styles.overlay}>
             <div className={styles.t1}>
               My Old Website
