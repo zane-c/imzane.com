@@ -10,7 +10,7 @@ import styles from './Projects.scss';
 
 class Projects extends React.Component {
   componentDidMount() {
-    document.title = 'Projects | IMZANE.com';
+    document.title = 'Projects | imZane.com';
   }
   render() {
     return (

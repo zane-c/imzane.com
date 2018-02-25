@@ -9,7 +9,7 @@ function Messenger(render) {
     m.current_length = 0;
     m.fadeBuffer = false;
     m.messages = [
-      'Welcome to ImZane.com',
+      'Welcome to imZane.com',
     ];
     setTimeout(m.animateIn, 100);
   };
@@ -90,7 +90,7 @@ class Welcome extends React.Component {
     };
   }
   componentDidMount() {
-    document.title = 'Welcome | IMZANE.COM';
+    document.title = 'Welcome | imZane.COM';
     const c = new Messenger(m => this.setState({ message: m }));
   }
   render() {

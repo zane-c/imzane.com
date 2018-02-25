@@ -4,7 +4,7 @@ import styles from './Resume.scss';
 
 class Resume extends React.Component {
   componentDidMount() {
-    document.title = 'Resume | IMZANE.com';
+    document.title = 'Resume | imZane.com';
   }
   render() {
     return (

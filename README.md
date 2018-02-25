@@ -1,4 +1,4 @@
-# ImZane.com
+# imZane.com
 
 A website for showcasing my recent projects and resume.
 
