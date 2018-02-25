@@ -79,7 +79,7 @@ class Resume extends React.Component {
             </div>
             <ul>
               <li>Created an automated testing framework that resulted in the creation
-              of over a hundred bug tickets.</li>
+              of over one hundred bug tickets.</li>
               <li>The system could test all user functionality
               in less than 30 minutes saving nearly 60 hours of human labor per
               release</li>
