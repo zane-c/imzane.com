@@ -18,3 +18,9 @@
 .item[data-selected=true] {
   border-bottom: 2px solid #d62058;
 }
+
+@media only screen and (max-width: 370px) {
+    .item {
+      width: 85px;
+    }
+}

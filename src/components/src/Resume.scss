@@ -88,3 +88,26 @@
     text-decoration: underline;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  .goals {
+    display: none;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .sectionLeft {
+    border-right: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+  }
+  .sectionRight {
+    padding-left: 0;
+  }
+  .mobileHeader {
+    display: block;
+  }
+  .container {
+    padding: 20px 30px;
+  }
+}

@@ -115,18 +115,18 @@ class Resume extends React.Component {
               Fullstack development, UI/UX design, data mining & analytics,
                data tool creation, artificial intelligence, security,
                QA automation testing, mobile development,
-               Java, C, C++, C#, PHP, JS, jQuery, React + Redux, HTML & CSS,
+               Java, C, C++, C#, PHP, Python, Ruby, JS, jQuery, React + Redux, HTML & CSS,
                TDD, Swift/iOS + Android, SQL and other DBMS, GIT aficionado.
           </div>
         </div>
         <div className={styles.section}>
           <div className={styles.sectionLeft}>
-            Projects
+            Project Links
           </div>
           <div className={styles.sectionRight}>
             <div className={styles.t2}>
               <div className={styles.link} onClick={() => browserHistory.push('/projects')}>
-                Click here to view recent projects.
+                Recent projects.
               </div>
             </div>
             <div className={styles.t2}>

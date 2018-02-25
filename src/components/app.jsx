@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Header from './core/Header.jsx';
+import Header from './src/Header.jsx';
 import Toaster from './core/Toaster.jsx';
 import styles from './app.scss';
 

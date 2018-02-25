@@ -13,8 +13,8 @@ export default () => (
     <h3>Dash Class</h3>
     <p>
       Too many times
-      {'I\'ve'} gone to class to see all my peers around me on their laptops or
-      phones during class doing completely unrelated things; Browsing facebook,
+      {' I\'ve'} gone to class to see all my peers around me on their laptops or
+      phones during class doing completely unrelated things; browsing facebook,
       internet memes, and cute animal vids. In our age of technology, we are
       addicted to stimulus response. Social interaction has changed both online
       and in person. Dash Class is an app designed to innovate the classroom
@@ -22,7 +22,6 @@ export default () => (
       deliver data to students and keep them participating and focused.
     </p>
     <h3>Features</h3>
-    <h4 id="features">Features</h4>
     <ul>
       <li><strong>Creating a room</strong>
         <ul>
