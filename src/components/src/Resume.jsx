@@ -124,7 +124,7 @@ class Resume extends React.Component {
             Projects
           </div>
           <div className={styles.sectionRight}>
-            <div className={styles.t1}>
+            <div className={styles.t2}>
               <div className={styles.link} onClick={() => browserHistory.push('/projects')}>
                 Click here to view recent projects.
               </div>
