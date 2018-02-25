@@ -32,11 +32,11 @@ class Resume extends React.Component {
               Electrical Engineering Computer Science, B.S. GPA: 3.5
             </div>
             <ul>
-              <li>Relevant courses: Data Structures, Artificial Intelligence,
-              Software Security,Discrete math, Probability and Algorithms,
-              Designing Information Systems.</li>
-              <li>Participate in Hackathons, code-jams, and
-              team driven side projects</li>
+              <li>Relevant courses: data structures, artificial intelligence,
+              software security, discrete math, probability and algorithms,
+              designing information systems.</li>
+              <li>Participating in Hackathons, code-jams, and
+              team driven side projects.</li>
             </ul>
             <div className={styles.t1}>
               Santa Barbara College City - Graduated 2016
@@ -45,8 +45,8 @@ class Resume extends React.Component {
               Computer Engineering, Transfer GPA: 3.7 Major GPA 4.0
             </div>
             <ul>
-              <li>President’s Honor Roll</li>
-              <li>Participated in CS clubs and programming competitions</li>
+              <li>President’s Honor Roll.</li>
+              <li>Participated in CS clubs and programming competitions.</li>
             </ul>
           </div>
         </div>
@@ -82,20 +82,19 @@ class Resume extends React.Component {
               of over one hundred bug tickets.</li>
               <li>The system could test all user functionality
               in less than 30 minutes saving nearly 60 hours of human labor per
-              release</li>
+              release.</li>
             </ul>
             <div className={styles.t1}>
-              Software Engineer, AS-Group USA, inc
+              Software Engineer, AS-Group USA, INC.
             </div>
             <div className={styles.t2}>
               November 2013 - August 2016
             </div>
             <ul>
               <li>Participated in a fullstack role at a data analytics company.</li>
-              <li>Created web crawlers that collected over 2 million price and stock
+              <li>Created web crawlers that collected over two million price and stock
               points daily.</li>
-              <li>Designed, developed, and maintained five websites/platforms
-               during employment.</li>
+              <li>Designed, developed, and maintained five websites/platforms.</li>
             </ul>
           </div>
         </div>
@@ -113,11 +112,11 @@ class Resume extends React.Component {
             <div className={styles.t1}>
               Areas of expertise:
             </div>
-              Fullstack development, UI/UX design, Data mining & Analytics,
-               data tool creation, Artificial Intelligence, Security,
+              Fullstack development, UI/UX design, data mining & analytics,
+               data tool creation, artificial intelligence, security,
                QA automation testing, mobile development,
                Java, C, C++, C#, PHP, JS, jQuery, React + Redux, HTML & CSS,
-               TDD, swift/iOS + android, SQL and other DBMS, GIT aficionado
+               TDD, Swift/iOS + Android, SQL and other DBMS, GIT aficionado.
           </div>
         </div>
         <div className={styles.section}>
@@ -132,7 +131,7 @@ class Resume extends React.Component {
             </div>
             <div className={styles.t2}>
               <a href="http://bitbyte.site" target="_blank" rel="noopener noreferrer">
-                My old Website
+                My old website
               </a>
             </div>
             <div className={styles.t2}>
