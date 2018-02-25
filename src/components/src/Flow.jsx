@@ -26,11 +26,19 @@ export default () => (
     </p>
     <p>
       Check out the code repository <span className={styles.elink}>
-        <a src="https://github.com/zane-c/flow" rel="noopner noreferrer">here</a>
+        <a
+          href="https://github.com/zane-c/flow"
+          rel="noopener noreferrer"
+          target="_blank"
+        >here</a>
       </span><br />
 
       Check out the development blog <span className={styles.elink}>
-        <a src="http://flow-the-game.blogspot.com/" rel="noopner noreferrer">here</a>
+        <a
+          href="http://flow-the-game.blogspot.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >here</a>
       </span>
     </p>
 
