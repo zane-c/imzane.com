@@ -76,17 +76,16 @@ export default () => (
     <p>
       Check out the code repository <span className={styles.elink}>
         <a
-          src="https://github.com/zane-c/Dash-Class"
-          rel="noopner noreferrer"
-          target="__blank"
+          href="https://github.com/zane-c/Dash-Class"
+          rel="noopener noreferrer"
+          target="_blank"
         >here</a>
       </span><br />
-
       Check out it live <span className={styles.elink}>
         <a
-          src="http://bitbyte.site/dashclass"
-          rel="noopner noreferrer"
-          target="__blank"
+          href="http://bitbyte.site/dashclass"
+          rel="noopener noreferrer"
+          target="_blank"
         >here</a>
       </span>
     </p>
