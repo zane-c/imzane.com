@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './index.html',
@@ -29,18 +30,22 @@ module.exports = {
     }, {
       include: [path.resolve(__dirname, './src')],
       test: /\.(css|sass|scss)$/,
-      use: [
-        { loader: 'style-loader' },
-        { loader: 'css-loader',
-          options: {
-            importLoaders: 1,
-            localIdentName: '[name]__[local]___[hash:base64:5]',
-            modules: true,
-            sourceMap: true,
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: [
+          // { loader: 'style-loader' },
+          { loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
+              modules: true,
+              sourceMap: true,
+            },
           },
-        },
-        { loader: 'sass-loader' },
-        { loader: 'postcss-loader' }],
+          { loader: 'sass-loader' },
+          { loader: 'postcss-loader' },
+        ],
+      }),
     }],
   },
   resolve: {
@@ -49,5 +54,8 @@ module.exports = {
       res: path.resolve(__dirname, './res'),
     },
   },
-  plugins: [HtmlWebpackPluginConfig],
+  plugins: [
+    HtmlWebpackPluginConfig,
+    new ExtractTextPlugin('styles.css'),
+  ],
 };
