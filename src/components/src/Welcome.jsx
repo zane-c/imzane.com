@@ -90,7 +90,7 @@ class Welcome extends React.Component {
     };
   }
   componentDidMount() {
-    document.title = 'Welcome | imZane.COM';
+    // document.title = 'Welcome | imZane.COM';
     const c = new Messenger(m => this.setState({ message: m }));
   }
   render() {

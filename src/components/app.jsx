@@ -5,17 +5,34 @@ import Header from './src/Header.jsx';
 import Toaster from './core/Toaster.jsx';
 import styles from './app.scss';
 
-const App = ({ children, notifications, pathname }) => (
-  <div className={styles.app}>
-    <div className={styles.body}>
-      <Header />
-      <div className={styles.content} key={pathname}>
-        {children}
+class App extends React.Component {
+  componentWillMount() {
+    const pacman = '• • • • • • • • • • • • • ᗣ • • • • • • • • • • •';
+    let f1;
+    (f1 = (index) => {
+      document.title = `ᗧ${pacman.slice(index)}`;
+      setTimeout(() => {
+        document.title = `O${pacman.slice(index + 1)}`;
+        setTimeout(() => f1((index + 2) % pacman.length), 300);
+      }, 300);
+    })(0);
+  }
+
+  render() {
+    const { children, notifications, pathname } = this.props;
+    return (
+      <div className={styles.app}>
+        <div className={styles.body}>
+          <Header />
+          <div className={styles.content} key={pathname}>
+            {children}
+          </div>
+        </div>
+        <Toaster notifications={notifications} />
       </div>
-    </div>
-    <Toaster notifications={notifications} />
-  </div>
-);
+    );
+  }
+}
 
 App.defaultProps = {
   children: null,
